@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D622493B18B173690078FCB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622493A18B173690078FCB2 /* Foundation.framework */; };
+		D622493D18B173690078FCB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622493C18B173690078FCB2 /* CoreGraphics.framework */; };
+		D622493F18B173690078FCB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622493E18B173690078FCB2 /* UIKit.framework */; };
+		D622494118B173690078FCB2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622494018B173690078FCB2 /* SpriteKit.framework */; };
+		D622494718B173690078FCB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D622494518B173690078FCB2 /* InfoPlist.strings */; };
+		D622494918B173690078FCB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D622494818B173690078FCB2 /* main.m */; };
+		D622494D18B173690078FCB2 /* fxxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D622494C18B173690078FCB2 /* fxxAppDelegate.m */; };
+		D622495018B173690078FCB2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D622494E18B173690078FCB2 /* Main_iPhone.storyboard */; };
+		D622495318B173690078FCB2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D622495118B173690078FCB2 /* Main_iPad.storyboard */; };
+		D622495618B173690078FCB2 /* fxxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D622495518B173690078FCB2 /* fxxViewController.m */; };
+		D622495918B173690078FCB2 /* fxxMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D622495818B173690078FCB2 /* fxxMyScene.m */; };
+		D622495B18B173690078FCB2 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = D622495A18B173690078FCB2 /* Spaceship.png */; };
+		D622495D18B173690078FCB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D622495C18B173690078FCB2 /* Images.xcassets */; };
+		D622496418B173690078FCB2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622496318B173690078FCB2 /* XCTest.framework */; };
+		D622496518B173690078FCB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622493A18B173690078FCB2 /* Foundation.framework */; };
+		D622496618B173690078FCB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D622493E18B173690078FCB2 /* UIKit.framework */; };
+		D622496E18B173690078FCB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D622496C18B173690078FCB2 /* InfoPlist.strings */; };
+		D622497018B173690078FCB2 /* FoxAvoidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D622496F18B173690078FCB2 /* FoxAvoidTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D622496718B173690078FCB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D622492F18B173680078FCB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D622493618B173680078FCB2;
+			remoteInfo = FoxAvoid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D622493718B173690078FCB2 /* FoxAvoid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoxAvoid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D622493A18B173690078FCB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D622493C18B173690078FCB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D622493E18B173690078FCB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D622494018B173690078FCB2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		D622494418B173690078FCB2 /* FoxAvoid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoxAvoid-Info.plist"; sourceTree = "<group>"; };
+		D622494618B173690078FCB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D622494818B173690078FCB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D622494A18B173690078FCB2 /* FoxAvoid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoxAvoid-Prefix.pch"; sourceTree = "<group>"; };
+		D622494B18B173690078FCB2 /* fxxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fxxAppDelegate.h; sourceTree = "<group>"; };
+		D622494C18B173690078FCB2 /* fxxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fxxAppDelegate.m; sourceTree = "<group>"; };
+		D622494F18B173690078FCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D622495218B173690078FCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D622495418B173690078FCB2 /* fxxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fxxViewController.h; sourceTree = "<group>"; };
+		D622495518B173690078FCB2 /* fxxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fxxViewController.m; sourceTree = "<group>"; };
+		D622495718B173690078FCB2 /* fxxMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fxxMyScene.h; sourceTree = "<group>"; };
+		D622495818B173690078FCB2 /* fxxMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fxxMyScene.m; sourceTree = "<group>"; };
+		D622495A18B173690078FCB2 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		D622495C18B173690078FCB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D622496218B173690078FCB2 /* FoxAvoidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoxAvoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D622496318B173690078FCB2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D622496B18B173690078FCB2 /* FoxAvoidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoxAvoidTests-Info.plist"; sourceTree = "<group>"; };
+		D622496D18B173690078FCB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D622496F18B173690078FCB2 /* FoxAvoidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoxAvoidTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D622493418B173680078FCB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622493D18B173690078FCB2 /* CoreGraphics.framework in Frameworks */,
+				D622493F18B173690078FCB2 /* UIKit.framework in Frameworks */,
+				D622494118B173690078FCB2 /* SpriteKit.framework in Frameworks */,
+				D622493B18B173690078FCB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D622495F18B173690078FCB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622496418B173690078FCB2 /* XCTest.framework in Frameworks */,
+				D622496618B173690078FCB2 /* UIKit.framework in Frameworks */,
+				D622496518B173690078FCB2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D622492E18B173680078FCB2 = {
+			isa = PBXGroup;
+			children = (
+				D622494218B173690078FCB2 /* FoxAvoid */,
+				D622496918B173690078FCB2 /* FoxAvoidTests */,
+				D622493918B173690078FCB2 /* Frameworks */,
+				D622493818B173690078FCB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D622493818B173690078FCB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D622493718B173690078FCB2 /* FoxAvoid.app */,
+				D622496218B173690078FCB2 /* FoxAvoidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D622493918B173690078FCB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D622493A18B173690078FCB2 /* Foundation.framework */,
+				D622493C18B173690078FCB2 /* CoreGraphics.framework */,
+				D622493E18B173690078FCB2 /* UIKit.framework */,
+				D622494018B173690078FCB2 /* SpriteKit.framework */,
+				D622496318B173690078FCB2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D622494218B173690078FCB2 /* FoxAvoid */ = {
+			isa = PBXGroup;
+			children = (
+				D622494B18B173690078FCB2 /* fxxAppDelegate.h */,
+				D622494C18B173690078FCB2 /* fxxAppDelegate.m */,
+				D622494E18B173690078FCB2 /* Main_iPhone.storyboard */,
+				D622495118B173690078FCB2 /* Main_iPad.storyboard */,
+				D622495418B173690078FCB2 /* fxxViewController.h */,
+				D622495518B173690078FCB2 /* fxxViewController.m */,
+				D622495718B173690078FCB2 /* fxxMyScene.h */,
+				D622495818B173690078FCB2 /* fxxMyScene.m */,
+				D622495A18B173690078FCB2 /* Spaceship.png */,
+				D622495C18B173690078FCB2 /* Images.xcassets */,
+				D622494318B173690078FCB2 /* Supporting Files */,
+			);
+			path = FoxAvoid;
+			sourceTree = "<group>";
+		};
+		D622494318B173690078FCB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D622494418B173690078FCB2 /* FoxAvoid-Info.plist */,
+				D622494518B173690078FCB2 /* InfoPlist.strings */,
+				D622494818B173690078FCB2 /* main.m */,
+				D622494A18B173690078FCB2 /* FoxAvoid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D622496918B173690078FCB2 /* FoxAvoidTests */ = {
+			isa = PBXGroup;
+			children = (
+				D622496F18B173690078FCB2 /* FoxAvoidTests.m */,
+				D622496A18B173690078FCB2 /* Supporting Files */,
+			);
+			path = FoxAvoidTests;
+			sourceTree = "<group>";
+		};
+		D622496A18B173690078FCB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D622496B18B173690078FCB2 /* FoxAvoidTests-Info.plist */,
+				D622496C18B173690078FCB2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D622493618B173680078FCB2 /* FoxAvoid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D622497318B173690078FCB2 /* Build configuration list for PBXNativeTarget "FoxAvoid" */;
+			buildPhases = (
+				D622493318B173680078FCB2 /* Sources */,
+				D622493418B173680078FCB2 /* Frameworks */,
+				D622493518B173680078FCB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoxAvoid;
+			productName = FoxAvoid;
+			productReference = D622493718B173690078FCB2 /* FoxAvoid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D622496118B173690078FCB2 /* FoxAvoidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D622497618B173690078FCB2 /* Build configuration list for PBXNativeTarget "FoxAvoidTests" */;
+			buildPhases = (
+				D622495E18B173690078FCB2 /* Sources */,
+				D622495F18B173690078FCB2 /* Frameworks */,
+				D622496018B173690078FCB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D622496818B173690078FCB2 /* PBXTargetDependency */,
+			);
+			name = FoxAvoidTests;
+			productName = FoxAvoidTests;
+			productReference = D622496218B173690078FCB2 /* FoxAvoidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D622492F18B173680078FCB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = fxx;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Lennard van Vloten";
+				TargetAttributes = {
+					D622496118B173690078FCB2 = {
+						TestTargetID = D622493618B173680078FCB2;
+					};
+				};
+			};
+			buildConfigurationList = D622493218B173680078FCB2 /* Build configuration list for PBXProject "FoxAvoid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D622492E18B173680078FCB2;
+			productRefGroup = D622493818B173690078FCB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D622493618B173680078FCB2 /* FoxAvoid */,
+				D622496118B173690078FCB2 /* FoxAvoidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D622493518B173680078FCB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622495B18B173690078FCB2 /* Spaceship.png in Resources */,
+				D622495D18B173690078FCB2 /* Images.xcassets in Resources */,
+				D622495318B173690078FCB2 /* Main_iPad.storyboard in Resources */,
+				D622495018B173690078FCB2 /* Main_iPhone.storyboard in Resources */,
+				D622494718B173690078FCB2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D622496018B173690078FCB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622496E18B173690078FCB2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D622493318B173680078FCB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622494918B173690078FCB2 /* main.m in Sources */,
+				D622495918B173690078FCB2 /* fxxMyScene.m in Sources */,
+				D622495618B173690078FCB2 /* fxxViewController.m in Sources */,
+				D622494D18B173690078FCB2 /* fxxAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D622495E18B173690078FCB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D622497018B173690078FCB2 /* FoxAvoidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D622496818B173690078FCB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D622493618B173680078FCB2 /* FoxAvoid */;
+			targetProxy = D622496718B173690078FCB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D622494518B173690078FCB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D622494618B173690078FCB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D622494E18B173690078FCB2 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D622494F18B173690078FCB2 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D622495118B173690078FCB2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D622495218B173690078FCB2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D622496C18B173690078FCB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D622496D18B173690078FCB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D622497118B173690078FCB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D622497218B173690078FCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D622497418B173690078FCB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoxAvoid/FoxAvoid-Prefix.pch";
+				INFOPLIST_FILE = "FoxAvoid/FoxAvoid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D622497518B173690078FCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoxAvoid/FoxAvoid-Prefix.pch";
+				INFOPLIST_FILE = "FoxAvoid/FoxAvoid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D622497718B173690078FCB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoxAvoid.app/FoxAvoid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoxAvoid/FoxAvoid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FoxAvoidTests/FoxAvoidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D622497818B173690078FCB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FoxAvoid.app/FoxAvoid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoxAvoid/FoxAvoid-Prefix.pch";
+				INFOPLIST_FILE = "FoxAvoidTests/FoxAvoidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D622493218B173680078FCB2 /* Build configuration list for PBXProject "FoxAvoid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D622497118B173690078FCB2 /* Debug */,
+				D622497218B173690078FCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D622497318B173690078FCB2 /* Build configuration list for PBXNativeTarget "FoxAvoid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D622497418B173690078FCB2 /* Debug */,
+				D622497518B173690078FCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D622497618B173690078FCB2 /* Build configuration list for PBXNativeTarget "FoxAvoidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D622497718B173690078FCB2 /* Debug */,
+				D622497818B173690078FCB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D622492F18B173680078FCB2 /* Project object */;
+}
